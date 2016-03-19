@@ -25,7 +25,7 @@ O status pode ser um dos seguintes:
 
 Simples `bash` script que monitora uma relação de partições passadas como argumento e dispara um e-mail alertando se o espaço em disco em uma dessas partições ultrapassar um limite pré-determinado. Por padrão, esse limite é `90%`.
 
-**Exemplo de uso: **
+**Exemplo de uso:**
 
 ```sh
 ./monitora_espaco.sh / /home
