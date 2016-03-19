@@ -1,18 +1,18 @@
 # Scripts
 
-Simples e ?teis scripts para ajudar em tarefas variadas.
+Simples e Ãºteis scripts para ajudar em tarefas variadas.
 
 ## vdisable.sh
 
 Utilize esse script para desativar em massa contas de e-mail usando o aplicativo vmoduser do vpopmail.
 
-Deve ser passado um ?nico argumento ao script, o qual ? um arquivo texto contendo as contas de e-mail que ser?o desativadas, uma conta por linha.
+Deve ser passado um Ãºnico argumento ao script, o qual Ã© um arquivo texto contendo as contas de e-mail que serÃ£o desativadas, uma conta por linha.
 
 ## zmodify.sh
 
 Utilize esse script para alterar o status de e-mail em massa usando o aplicativo zmcontrol do Zimbra.
 
-Como argumentos ao script deve ser passado o arquivo texto contendo as contas de e-mail que ter?o seu status alterado e o status a ser aplicado.
+Como argumentos ao script deve ser passado o arquivo texto contendo as contas de e-mail que terÃ£o seu status alterado e o status a ser aplicado.
 
 O status pode ser um dos seguintes:
 
@@ -23,7 +23,7 @@ O status pode ser um dos seguintes:
 
 ## monitora_espaco.sh
 
-Simples `bash` script que monitora uma relação de partições passadas como argumento e dispara um e-mail alertando se o espaço em disco em uma dessas partições ultrapassar um limite pré-determinado. Por padrão, esse limite é `90%`.
+Simples `bash` script que monitora uma relaÃ§Ã£o de partiÃ§Ãµes passadas como argumento e dispara um e-mail alertando se o espaÃ§o em disco em uma dessas partiÃ§Ãµes ultrapassar um limite prÃ©-determinado. Por padrÃ£o, esse limite Ã© `90%`.
 
 **Exemplo de uso: **
 
@@ -31,19 +31,19 @@ Simples `bash` script que monitora uma relação de partições passadas como argume
 ./monitora_espaco.sh / /home
 ```
 
-No exemplo acima, se o espaço utilizado pelas partições `/` e `/home` ultrapassar `90%`, então um e-mail será disparado para o destinatário informando sobre essa situação.
+No exemplo acima, se o espaÃ§o utilizado pelas partiÃ§Ãµes `/` e `/home` ultrapassar `90%`, entÃ£o um e-mail serÃ¡ disparado para o destinatÃ¡rio informando sobre essa situaÃ§Ã£o.
 
-A utilidade maior desse script é quando o mesmo é executado periodicamente via agendamento no `cron`. Assim, periodicamente o destinatário receberá e-mails de alerta informando sobre as partições que estiverem na iminência de esgotamento de espaço.
+A utilidade maior desse script Ã© quando o mesmo Ã© executado periodicamente via agendamento no `cron`. Assim, periodicamente o destinatÃ¡rio receberÃ¡ e-mails de alerta informando sobre as partiÃ§Ãµes que estiverem na iminÃªncia de esgotamento de espaÃ§o.
 
-### Dependências
+### DependÃªncias
 
 - Bash 3.+
 - Linux ou FreeBSD
-- linguagem de programação `awk`
+- linguagem de programaÃ§Ã£o `awk`
 - mail (comando parte do pacote `mailx`)
 
-### Informações adicionais
+### InformaÃ§Ãµes adicionais
 
-Para alterar o e-mail do destinatário, deve-se editar o script e alterar a variável de nome `destinatario`.
+Para alterar o e-mail do destinatÃ¡rio, deve-se editar o script e alterar a variÃ¡vel de nome `destinatario`.
 
-Por padrão, o limite considerado é de `90%`. Deve-se alterar a variável `limite` no script para mudar esse comportamento.
+Por padrÃ£o, o limite considerado Ã© de `90%`. Deve-se alterar a variÃ¡vel `limite` no script para mudar esse comportamento.
